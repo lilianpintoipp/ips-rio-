@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Expediente | IPS Rio</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #ffffff;
+      font-family: Arial, sans-serif;
+      color: #173B43;
+    }
+
+    .expediente {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 30px;
+    }
+
+    .expediente-intro {
+      margin-bottom: 35px;
+    }
+
+    .expediente-kicker {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #0F766E;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    .expediente h2 {
+      font-size: 34px;
+      line-height: 1.15;
+      margin: 0 0 18px;
+      font-weight: 700;
+    }
+
+    .expediente p {
+      font-size: 17px;
+      line-height: 1.7;
+      color: #52666B;
+      margin: 0;
+    }
+
+    .expediente-label {
+      display: block;
+      font-size: 15px;
+      font-weight: 600;
+      color: #173B43;
+      margin-bottom: 10px;
+    }
+
+    .expediente-select {
+      width: 220px;
+      padding: 13px 16px;
+      border: 1px solid #D5DFE1;
+      border-radius: 10px;
+      background: #FFFFFF;
+      color: #173B43;
+      font-size: 16px;
+      cursor: pointer;
+      margin-bottom: 35px;
+    }
+
+    .expediente-select:focus {
+      outline: none;
+      border-color: #57BCD6;
+    }
+
+    .expediente-conteudo {
+      font-size: 17px;
+      line-height: 1.7;
+      color: #52666B;
+    }
+
+    .expediente-conteudo h3 {
+      font-size: 25px;
+      color: #173B43;
+      margin: 0 0 18px;
+    }
+
+    .expediente-conteudo strong {
+      color: #173B43;
+    }
+
+    .ano-conteudo {
+      display: none;
+    }
+
+    .ano-conteudo.ativo {
+      display: block;
+    }
+
+    @media (max-width: 600px) {
+
+      .expediente {
+        padding: 30px 20px;
+      }
+
+      .expediente h2 {
+        font-size: 28px;
+      }
+
+      .expediente-select {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="expediente">
+
+    <div class="expediente-intro">
+
+      <div class="expediente-kicker">
+        Expediente
+      </div>
+
+      <h2>
+        Quem constrói o IPS Rio?
+      </h2>
+
+      <p>
+        O Índice de Progresso Social (IPS) Rio é resultado do trabalho conjunto
+        de diferentes equipes e instituições ao longo de suas edições.
+        Conheça as pessoas envolvidas na construção de cada versão do índice.
+      </p>
+
+    </div>
+
+
+    <label class="expediente-label" for="ano-ips">
+      Conheça a equipe por trás do IPS Rio
+    </label>
+
+
+    <select class="expediente-select" id="ano-ips">
+
+      <option value="2024" selected>2024</option>
+      <option value="2022">2022</option>
+      <option value="2020">2020</option>
+      <option value="2018">2018</option>
+      <option value="2016">2016</option>
+
+    </select>
+
+
+    <div class="expediente-conteudo">
+
+      <!-- 2024 -->
+
+      <div id="exp-2024" class="ano-conteudo ativo">
+
+        <h3>IPS Rio 2024</h3>
+
+        <p>
+          <strong>Coordenação:</strong>
+          Nome da pessoa.
+        </p>
+
+        <p>
+          <strong>Equipe técnica:</strong>
+          Nome da pessoa, Nome da pessoa e Nome da pessoa.
+        </p>
+
+        <p>
+          <strong>Colaboradores:</strong>
+          Nome da pessoa e Nome da pessoa.
+        </p>
+
+      </div>
+
+
+      <!-- 2022 -->
+
+      <div id="exp-2022" class="ano-conteudo">
+
+        <h3>IPS Rio 2022</h3>
+
+        <p>
+          <strong>Coordenação:</strong>
+          Nome da pessoa.
+        </p>
+
+        <p>
+          <strong>Equipe técnica:</strong>
+          Nome da pessoa, Nome da pessoa e Nome da pessoa.
+        </p>
+
+        <p>
+          <strong>Colaboradores:</strong>
+          Nome da pessoa e Nome da pessoa.
+        </p>
+
+      </div>
+
+
+      <!-- 2020 -->
+
+      <div id="exp-2020" class="ano-conteudo">
+
+        <h3>IPS Rio 2020</h3>
+
+        <p>
+          <strong>Coordenação:</strong>
+          Nome da pessoa.
+        </p>
+
+        <p>
+          <strong>Equipe técnica:</strong>
+          Nome da pessoa, Nome da pessoa e Nome da pessoa.
+        </p>
+
+      </div>
+
+
+      <!-- 2018 -->
+
+      <div id="exp-2018" class="ano-conteudo">
+
+        <h3>IPS Rio 2018</h3>
+
+        <p>
+          <strong>Coordenação:</strong>
+          Nome da pessoa.
+        </p>
+
+        <p>
+          <strong>Equipe técnica:</strong>
+          Nome da pessoa, Nome da pessoa e Nome da pessoa.
+        </p>
+
+      </div>
+
+
+      <!-- 2016 -->
+
+      <div id="exp-2016" class="ano-conteudo">
+
+        <h3>IPS Rio 2016</h3>
+
+        <p>
+          <strong>Coordenação:</strong>
+          Nome da pessoa.
+        </p>
+
+        <p>
+          <strong>Equipe técnica:</strong>
+          Nome da pessoa, Nome da pessoa e Nome da pessoa.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+      const seletor = document.getElementById("ano-ips");
+
+      const conteudos = document.querySelectorAll(".ano-conteudo");
+
+
+      seletor.addEventListener("change", function () {
+
+        const anoSelecionado = this.value;
+
+
+        conteudos.forEach(function (conteudo) {
+
+          conteudo.classList.remove("ativo");
+
+        });
+
+
+        const conteudoSelecionado =
+          document.getElementById("exp-" + anoSelecionado);
+
+
+        if (conteudoSelecionado) {
+
+          conteudoSelecionado.classList.add("ativo");
+
+        }
+
+      });
+
+    });
+
+  </script>
+
+</body>
+</html>
